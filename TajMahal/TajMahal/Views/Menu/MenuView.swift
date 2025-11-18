@@ -23,14 +23,14 @@ struct MenuView: View {
                     Section {
                         
                         NavigationLink {
-                            Text("Vue des plats")
+                            DishDetailView(dish: viewModel.apetizerArray[0])
                         } label: {
                             DishShortView(dish: viewModel.apetizerArray[0])
                                 .background(.white)
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20))
                         NavigationLink {
-                            Text("Vue des plats")
+                            DishDetailView(dish: viewModel.apetizerArray[1])
                         } label: {
                             DishShortView(dish: viewModel.apetizerArray[1])
                                 .background(.white)
@@ -53,14 +53,14 @@ struct MenuView: View {
                     
                     Section {
                         NavigationLink {
-                            Text("Vue des plats")
+                            DishDetailView(dish: viewModel.mainCourseArray[0])
                         } label: {
                             DishShortView(dish: viewModel.mainCourseArray[0])
                                 .background(.white)
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20))
                         NavigationLink {
-                            Text("Vue des plats")
+                            DishDetailView(dish: viewModel.mainCourseArray[1])
                         } label: {
                             DishShortView(dish: viewModel.mainCourseArray[1])
                                 .background(.white)
