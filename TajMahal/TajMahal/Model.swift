@@ -31,3 +31,19 @@ struct Dish {
     var imageName: String
     var price: Float
 }
+
+// Représente l'objet "détail" du restaurant
+struct RestaurantDetail: Hashable {
+    var id: UUID = UUID()
+    var logoName: ImageSource
+    var column1: String
+    var column2: String
+}
+
+// Représente l'objet "restaurant" qui figure sur la Welcome View
+struct Restaurant: Hashable {
+    var id: UUID = UUID()
+    var name: String
+    var type: String
+    var details: [RestaurantDetail]
+}

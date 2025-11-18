@@ -22,4 +22,37 @@ struct ViewModel {
     [Dish(name: "Chicken Tikka Masala", description: "Poulet mariné, grillé et servi dans une sauce masala", allergens: "Lait, yaourt, beurre clarifié (ghee), crème fraîche, crème de coco, ail, oignon", ingredients: "Huile, beurre clarifié (ghee), oignon, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, crème fraîche, crème de coco, sel, coriandre fraîche", spiceLevel: .medium, imageName: "Tikka Masala", price: 13.0),
      Dish(name: "Biryani aux légumes", description: "Riz parfumé cuit avec des légumes et des épices", allergens: "Noix de cajou, riz", ingredients: "Riz basmati, légumes assortis (carottes, petits pois, haricots verts), noix de cajou, raisins secs, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre", spiceLevel: .medium, imageName: "Biryani", price: 10.5),
      Dish(name: "Rogan Josh", description: "Agneau mijoté dans une sauce épicée", allergens: "Ail, oignon", ingredients: "Agneau, oignons, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, huile, coriandre fraîche", spiceLevel: .hot, imageName: "Rogan Josh", price: 12.0)]
+    
+    // Stock la description du restaurant
+    let restaurant: Restaurant = Restaurant(
+        name: "Le Taj Mahal",
+        type: "Restaurant indien",
+        details: [
+            RestaurantDetail(
+                logoName: .system(name: "clock"),
+                column1: "Mardi",
+                column2: "11h30 - 14h30 ・ 18h30 - 22h00"
+            ),
+            RestaurantDetail(
+                logoName: .asset(name: "type-service"),
+                column1: "Type de service",
+                column2: "A emporter"
+            ),
+            RestaurantDetail(
+                logoName: .asset(name: "position"),
+                column1: "12 Avenue de la Brique - 75010 Paris",
+                column2: ""
+            ),
+            RestaurantDetail(
+                logoName: .system(name: "globe"),
+                column1: "www.tajmahal.fr",
+                column2: ""
+            ),
+            RestaurantDetail(
+                logoName: .asset(name: "custom-phone"),
+                column1: "06 12 34 56 78",
+                column2: ""
+            )
+        ]
+    )
 }
