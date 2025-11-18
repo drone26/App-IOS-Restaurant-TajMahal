@@ -7,6 +7,12 @@
 
 import Foundation
 
+// Représente la source des images (Asset / system image)
+enum ImageSource: Hashable {
+    case asset(name: String)      // Pour les images de Assets.xcassets
+    case system(name: String)     // Pour les SF Symbols (system images)
+}
+
 // Cette enumération répertorie 3 niveaux de piment
 enum SpiceLevel {
     case light
