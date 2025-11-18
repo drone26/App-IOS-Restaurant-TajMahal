@@ -42,6 +42,8 @@ struct WelcomeView: View {
 }
 
 struct ShowRestaurantDetails: View {
+    let viewModel: ViewModel = ViewModel()
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -65,11 +67,13 @@ struct ShowRestaurantDetails: View {
         Spacer()
         
         VStack(alignment: .leading) {
-            RestaurantDescriptionLineView(imagePath: .system(name: "clock"), leftText: "Mardi", rightText: "11h30 - 14h30 ・ 18h30 - 22h00")
-            RestaurantDescriptionLineView(imagePath: .asset(name: "type-service"), leftText: "Type de service", rightText: "À emporter")
-            RestaurantDescriptionLineView(imagePath: .asset(name: "position"), leftText: "12 Avenue de la Brique - 75010 Paris", rightText: "")
-            RestaurantDescriptionLineView(imagePath: .system(name: "globe"), leftText: "www.tajmahal.fr", rightText: "")
-            RestaurantDescriptionLineView(imagePath: .asset(name: "custom-phone"), leftText: "06 12 34 56 78", rightText: "")
+            ForEach(viewModel.restaurant.details, id: \.id) { detail in
+                RestaurantDescriptionLineView(
+                    imagePath: detail.logoName,
+                    leftText: detail.column1,
+                    rightText: detail.column2
+                )
+            }
         }
     }
 }
