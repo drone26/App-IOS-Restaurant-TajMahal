@@ -28,4 +28,5 @@ struct Dish {
     var ingredients: String
     var spiceLevel: SpiceLevel
     var imageName: String
+    var price: Float
 }
