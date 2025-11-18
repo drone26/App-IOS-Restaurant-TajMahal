@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// Page d'accueil
+// Welcome View
 struct WelcomeView: View {
     var body: some View {
         NavigationStack {

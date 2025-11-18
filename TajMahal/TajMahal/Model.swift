@@ -7,20 +7,20 @@
 
 import Foundation
 
-// Représente la source des images (Asset / system image)
+// Enumerate image source (Asset / system image)
 enum ImageSource: Hashable {
-    case asset(name: String)      // Pour les images de Assets.xcassets
-    case system(name: String)     // Pour les SF Symbols (system images)
+    case asset(name: String)      // image from project's asset
+    case system(name: String)     // Image from SF Symbols (system images)
 }
 
-// Cette enumération répertorie 3 niveaux de piment
+// Enumerate the 3 spiciness levels
 enum SpiceLevel {
     case light
     case medium
     case hot
 }
 
-// Représente l'objet "plat", qui figure sur la carte du menu
+// Describe Dish object for the restaurant menu
 struct Dish {
     var id: UUID = UUID()
     var name: String
@@ -32,7 +32,7 @@ struct Dish {
     var price: Float
 }
 
-// Représente l'objet "détail" du restaurant
+// Describe Restaurant Details object for the restaurant
 struct RestaurantDetail: Hashable {
     var id: UUID = UUID()
     var logoName: ImageSource
@@ -40,7 +40,7 @@ struct RestaurantDetail: Hashable {
     var column2: String
 }
 
-// Représente l'objet "restaurant" qui figure sur la Welcome View
+// Describe Restaurant object
 struct Restaurant: Hashable {
     var id: UUID = UUID()
     var name: String

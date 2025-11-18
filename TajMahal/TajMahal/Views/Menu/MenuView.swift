@@ -7,20 +7,24 @@
 
 import SwiftUI
 
-// Menu sous forme de liste
+// View to display menu as List. All dish have a short view
 struct MenuView: View {
-    // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
+    // Reference to the view model that allow to access arrays of apetizer and mainCourse dishes
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
         NavigationStack {
             ZStack {
                 
+                // global background of the view (low layer of the stack)
                 Color(.customGrayF1F1F1)
                         .ignoresSafeArea()
                                 
+                // Menu list
                 List {
+                    // apetizer section
                     Section {
+                        // Add dish links and short view for each apetizer
                         ForEach(viewModel.apetizerArray, id: \.id) { dish in
                             NavigationLink {
                                 DishDetailView(dish: dish)
@@ -45,7 +49,9 @@ struct MenuView: View {
                     .listSectionSpacing(0)
                     .cornerRadius(10)
                     
+                    // mainCourseArray section
                     Section {
+                        // Add dish links and short view for each mainCourse
                         ForEach(viewModel.mainCourseArray, id: \.id) { dish in
                             NavigationLink {
                                 DishDetailView(dish: dish)
@@ -79,10 +85,13 @@ struct MenuView: View {
     }
 }
 
+// Preview in light mode
 #Preview("clair") {
     MenuView()
+        .preferredColorScheme(.light)
 }
 
+// Preview in dark mode
 #Preview("sombre") {
     MenuView()
         .preferredColorScheme(.dark)

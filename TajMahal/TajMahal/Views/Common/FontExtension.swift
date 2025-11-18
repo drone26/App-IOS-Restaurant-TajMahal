@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Definition for additional fonts
 extension Font {
     static let FontBold14 = Font.custom("PlusJakartaSans-Bold", size: 14)
     static let FontBold16 = Font.custom("PlusJakartaSans-Bold", size: 16)

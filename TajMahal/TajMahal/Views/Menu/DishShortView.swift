@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// View to display short details of a dish (tiny image, description, spicy level)
 struct DishShortView: View {
     var dish: Dish
     
@@ -16,7 +17,6 @@ struct DishShortView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 112, height: 86, alignment: .center)
-                //.clipped()
                 .cornerRadius(10)
             VStack(alignment: .leading) {
                 Text(dish.name)
@@ -27,6 +27,7 @@ struct DishShortView: View {
                     .font(.FontRegular12)
                     .foregroundColor(.customGray666666)
                 HStack {
+                    // Currency in euro and decimal format for France
                     Text(dish.price, format: .currency(code: "EUR"))
                         .environment(\.locale, Locale(identifier: "fr_FR"))
                         .font(.FontSemiBold12)

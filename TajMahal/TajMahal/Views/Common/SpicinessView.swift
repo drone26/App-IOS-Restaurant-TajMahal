@@ -7,14 +7,18 @@
 
 import SwiftUI
 
+// View to display spiciness level (3 levels)
 struct SpicinessView: View {
     var size: Int
     var spiceLevel: SpiceLevel
     
     var body: some View {
+        
+        // first spicy
         Image("spicy")
             .foregroundColor(.customRed)
         
+        // second spicy
         switch spiceLevel {
         case .medium, .hot:
             Image("spicy")
@@ -24,6 +28,7 @@ struct SpicinessView: View {
                 .foregroundColor(.customGrayDADADA)
         }
         
+        // third spicy
         switch spiceLevel {
         case .hot:
             Image("spicy")

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// View to display dish details (image, allergens, ingredients)
 struct DishDetailView: View {
     var dish: Dish
     
