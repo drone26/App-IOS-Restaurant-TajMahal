@@ -17,23 +17,17 @@ struct MenuView: View {
             ZStack {
                 
                 Color(.customGrayF1F1F1)
-                    .ignoresSafeArea()
-                
+                        .ignoresSafeArea()
+                                
                 List {
                     Section {
-                        
-                        NavigationLink {
-                            DishDetailView(dish: viewModel.apetizerArray[0])
-                        } label: {
-                            DishShortView(dish: viewModel.apetizerArray[0])
-                                .background(.white)
-                        }
-                        .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20))
-                        NavigationLink {
-                            DishDetailView(dish: viewModel.apetizerArray[1])
-                        } label: {
-                            DishShortView(dish: viewModel.apetizerArray[1])
-                                .background(.white)
+                        ForEach(viewModel.apetizerArray, id: \.id) { dish in
+                            NavigationLink {
+                                DishDetailView(dish: dish)
+                            } label: {
+                                DishShortView(dish: dish)
+                                    .background(.white)
+                            }
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20))
                     } header: {
@@ -52,18 +46,13 @@ struct MenuView: View {
                     .cornerRadius(10)
                     
                     Section {
-                        NavigationLink {
-                            DishDetailView(dish: viewModel.mainCourseArray[0])
-                        } label: {
-                            DishShortView(dish: viewModel.mainCourseArray[0])
-                                .background(.white)
-                        }
-                        .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20))
-                        NavigationLink {
-                            DishDetailView(dish: viewModel.mainCourseArray[1])
-                        } label: {
-                            DishShortView(dish: viewModel.mainCourseArray[1])
-                                .background(.white)
+                        ForEach(viewModel.mainCourseArray, id: \.id) { dish in
+                            NavigationLink {
+                                DishDetailView(dish: dish)
+                            } label: {
+                                DishShortView(dish: dish)
+                                    .cornerRadius(10)
+                            }
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20))
                     } header: {
@@ -90,6 +79,12 @@ struct MenuView: View {
     }
 }
 
-#Preview {
+#Preview("clair") {
     MenuView()
 }
+
+#Preview("sombre") {
+    MenuView()
+        .preferredColorScheme(.dark)
+}
+
