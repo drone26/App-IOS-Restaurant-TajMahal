@@ -3,13 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39AF03722ECC4D6D00DA6965 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39AF036F2ECC4D6D00DA6965 /* PlusJakartaSans-Regular.ttf */; };
-		39AF03732ECC4D6D00DA6965 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39AF036E2ECC4D6D00DA6965 /* PlusJakartaSans-Bold.ttf */; };
-		39AF03742ECC4D6D00DA6965 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39AF03702ECC4D6D00DA6965 /* PlusJakartaSans-SemiBold.ttf */; };
+		3946658E2ECEE45B00284567 /* ShowRestaurantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946658D2ECEE45B00284567 /* ShowRestaurantDetails.swift */; };
 		39AF03802ECC4DE800DA6965 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF03782ECC4DE800DA6965 /* DishDetailView.swift */; };
 		39AF03822ECC4DE800DA6965 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF037B2ECC4DE800DA6965 /* MenuView.swift */; };
 		39AF03832ECC4DE800DA6965 /* RestaurantDescriptionLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF037D2ECC4DE800DA6965 /* RestaurantDescriptionLineView.swift */; };
@@ -17,6 +15,7 @@
 		39AF03852ECC4DE800DA6965 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF03752ECC4DE800DA6965 /* FontExtension.swift */; };
 		39AF038E2ECC657C00DA6965 /* DishShortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF038D2ECC657C00DA6965 /* DishShortView.swift */; };
 		39AF03902ECC65DD00DA6965 /* SpicinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF038F2ECC65DD00DA6965 /* SpicinessView.swift */; };
+		39EAAB8D2ECDFEDD008C270C /* MenuSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EAAB8C2ECDFEDD008C270C /* MenuSectionView.swift */; };
 		428D2B512AFA851900BBA4F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B502AFA851900BBA4F5 /* Model.swift */; };
 		428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B522AFA882700BBA4F5 /* ViewModel.swift */; };
 		42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */; };
@@ -25,9 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39AF036E2ECC4D6D00DA6965 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
-		39AF036F2ECC4D6D00DA6965 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
-		39AF03702ECC4D6D00DA6965 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		3946658D2ECEE45B00284567 /* ShowRestaurantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRestaurantDetails.swift; sourceTree = "<group>"; };
 		39AF03752ECC4DE800DA6965 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		39AF03782ECC4DE800DA6965 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
 		39AF037B2ECC4DE800DA6965 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -35,6 +32,7 @@
 		39AF037E2ECC4DE800DA6965 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		39AF038D2ECC657C00DA6965 /* DishShortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishShortView.swift; sourceTree = "<group>"; };
 		39AF038F2ECC65DD00DA6965 /* SpicinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicinessView.swift; sourceTree = "<group>"; };
+		39EAAB8C2ECDFEDD008C270C /* MenuSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionView.swift; sourceTree = "<group>"; };
 		428D2B502AFA851900BBA4F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		428D2B522AFA882700BBA4F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		42E9DCAA2AF11136007CE7D0 /* TajMahal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TajMahal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +41,10 @@
 		42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		39EAAB842ECDFD2B008C270C /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		42E9DCA72AF11136007CE7D0 /* Frameworks */ = {
@@ -55,16 +57,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39AF03712ECC4D6D00DA6965 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				39AF036E2ECC4D6D00DA6965 /* PlusJakartaSans-Bold.ttf */,
-				39AF036F2ECC4D6D00DA6965 /* PlusJakartaSans-Regular.ttf */,
-				39AF03702ECC4D6D00DA6965 /* PlusJakartaSans-SemiBold.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		39AF03772ECC4DE800DA6965 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +79,7 @@
 			children = (
 				39AF037B2ECC4DE800DA6965 /* MenuView.swift */,
 				39AF038D2ECC657C00DA6965 /* DishShortView.swift */,
+				39EAAB8C2ECDFEDD008C270C /* MenuSectionView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -96,6 +89,7 @@
 			children = (
 				39AF037D2ECC4DE800DA6965 /* RestaurantDescriptionLineView.swift */,
 				39AF037E2ECC4DE800DA6965 /* WelcomeView.swift */,
+				3946658D2ECEE45B00284567 /* ShowRestaurantDetails.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -119,7 +113,7 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
-				39AF03712ECC4D6D00DA6965 /* Fonts */,
+				39EAAB842ECDFD2B008C270C /* Resources */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
@@ -165,6 +159,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				39EAAB842ECDFD2B008C270C /* Resources */,
+			);
 			name = TajMahal;
 			productName = TajMahal;
 			productReference = 42E9DCAA2AF11136007CE7D0 /* TajMahal.app */;
@@ -208,9 +205,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39AF03722ECC4D6D00DA6965 /* PlusJakartaSans-Regular.ttf in Resources */,
-				39AF03732ECC4D6D00DA6965 /* PlusJakartaSans-Bold.ttf in Resources */,
-				39AF03742ECC4D6D00DA6965 /* PlusJakartaSans-SemiBold.ttf in Resources */,
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
 			);
@@ -227,11 +221,13 @@
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				39AF03802ECC4DE800DA6965 /* DishDetailView.swift in Sources */,
+				39EAAB8D2ECDFEDD008C270C /* MenuSectionView.swift in Sources */,
 				39AF03822ECC4DE800DA6965 /* MenuView.swift in Sources */,
 				39AF03832ECC4DE800DA6965 /* RestaurantDescriptionLineView.swift in Sources */,
 				39AF03842ECC4DE800DA6965 /* WelcomeView.swift in Sources */,
 				39AF03852ECC4DE800DA6965 /* FontExtension.swift in Sources */,
 				39AF03902ECC65DD00DA6965 /* SpicinessView.swift in Sources */,
+				3946658E2ECEE45B00284567 /* ShowRestaurantDetails.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +370,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +401,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

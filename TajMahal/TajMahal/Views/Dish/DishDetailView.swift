@@ -13,46 +13,49 @@ struct DishDetailView: View {
     
     var body: some View {
         VStack {
-            ZStack(alignment: .topTrailing) {
-                
-                Image(dish.imageName)
-                    .resizable(capInsets: EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0), resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
-                    .shadow(radius: 5, x: 2, y: 2)
-            
-                HStack {
-                    SpicinessView(size: 14, spiceLevel: dish.spiceLevel)
+            ScrollView {
+                ZStack(alignment: .topTrailing) {
+                    
+                    Image(dish.imageName)
+                        .resizable(capInsets: EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0), resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(10)
+                        .shadow(radius: 5, x: 2, y: 2)
+                    
+                    HStack {
+                        SpicinessView(size: 14, spiceLevel: dish.spiceLevel)
+                    }
+                    .frame(width: 74, height: 22)
+                    .background(.customWhite)
+                    .clipShape(Capsule())
+                    .padding(12)
                 }
-                .padding(4)
-                .background(Color.white)
-                .clipShape(Capsule())
-                .padding(12)
-            }
-            
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Allergènes :")
-                    .font(.FontSemiBold12)
-                    .foregroundColor(.customGray666666)
-                Text(dish.allergens)
-                    .font(.FontRegular12)
-                    .foregroundColor(.customGray666666)
                 
-                Divider()
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Allergènes :")
+                        .font(.FontSemiBold12)
+                        .foregroundColor(.customGray666666)
+                    Text(dish.allergens)
+                        .font(.FontRegular12)
+                        .foregroundColor(.customGray666666)
+                    
+                    Divider()
+                    
+                    Text("Ingrédients :")
+                        .font(.FontSemiBold12)
+                        .foregroundColor(.customGray666666)
+                    Text(dish.ingredients)
+                        .font(.FontRegular12)
+                        .foregroundColor(.customGray666666)
+                }
+                .padding(.top, 32)
                 
-                Text("Ingrédients :")
-                    .font(.FontSemiBold12)
-                    .foregroundColor(.customGray666666)
-                Text(dish.ingredients)
-                    .font(.FontRegular12)
-                    .foregroundColor(.customGray666666)
+                Spacer()
             }
-            .padding(.top, 32)
-            
-            Spacer()
+            .padding(.horizontal, 20)
+            .navigationTitle(dish.name)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding(.horizontal, 20)
-        .navigationTitle(dish.name)
     }
 }
 

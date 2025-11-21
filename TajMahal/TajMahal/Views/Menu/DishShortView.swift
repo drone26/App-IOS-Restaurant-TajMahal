@@ -18,26 +18,30 @@ struct DishShortView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 112, height: 86, alignment: .center)
                 .cornerRadius(10)
+            
             VStack(alignment: .leading) {
                 Text(dish.name)
                     .font(.FontSemiBold14)
                     .foregroundColor(.customGray666666)
                     .padding(.bottom, 2)
+                
                 Text(dish.description)
                     .font(.FontRegular12)
                     .foregroundColor(.customGray666666)
+                
                 HStack {
                     // Currency in euro and decimal format for France
                     Text(dish.price, format: .currency(code: "EUR"))
                         .environment(\.locale, Locale(identifier: "fr_FR"))
                         .font(.FontSemiBold12)
                         .foregroundColor(.customGray666666)
+                    
                     Spacer()
+                    
                     SpicinessView(size: 12, spiceLevel: dish.spiceLevel)
                 }
             }
         }
-        .padding(12)
     }
 }
 
