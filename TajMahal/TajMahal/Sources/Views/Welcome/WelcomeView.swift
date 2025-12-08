@@ -19,7 +19,6 @@ struct WelcomeView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: .infinity)
-                    // .cornerRadius(10) // Image need to be delivered without round corners at source
                     .shadow(radius: 5, x: 2, y: 2)
                                 
                 ShowRestaurantDetails()

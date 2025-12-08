@@ -16,18 +16,18 @@ struct RestaurantDescriptionLineView: View {
     var body: some View {
         HStack {
             switch imagePath {
-                // image is an asset inside the xcode projects
+                // image is an asset inside the xcode project
             case .asset(let name):
                 Image(name)
                     .resizable()
-                    .foregroundStyle(Color(.customGray666666)) // Color #666666
+                    .foregroundStyle(Color(.customGray666666))
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 14, height: 14)
                 // image is from system symbols
             case .system(let name):
                 Image(systemName: name)
                     .resizable()
-                    .foregroundStyle(Color(.customGray666666)) // Color #666666
+                    .foregroundStyle(Color(.customGray666666))
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 14, height: 14)
             }
