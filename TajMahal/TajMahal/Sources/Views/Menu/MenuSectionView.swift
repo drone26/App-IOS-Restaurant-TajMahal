@@ -14,6 +14,7 @@ struct MenuSectionView: View {
     var body: some View {
         Section {
             ForEach(dishArray, id: \.id) { dish in
+                // Link to the dish detail
                 NavigationLink {
                     DishDetailView(dish: dish)
                 } label: {
